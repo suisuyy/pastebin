@@ -1,0 +1,14 @@
+lenovo-j607f-kernel# find -name qca*
+./drivers/usb/serial/qcaux.c
+./drivers/net/ethernet/qualcomm/qca_7k.c
+./drivers/net/ethernet/qualcomm/qca_7k_common.c
+./drivers/net/ethernet/qualcomm/qca_debug.h
+./drivers/net/ethernet/qualcomm/qca_spi.h
+./drivers/net/ethernet/qualcomm/qca_uart.c
+./drivers/net/ethernet/qualcomm/qca_debug.c
+./drivers/net/ethernet/qualcomm/qca_7k_common.h
+./drivers/net/ethernet/qualcomm/qca_7k.h
+./drivers/net/ethernet/qualcomm/qca_spi.c
+./drivers/net/dsa/qca8k.h
+./drivers/net/dsa/qca8k.c
+./arch/mips/boot/dts/qca
