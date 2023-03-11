@@ -1,0 +1,10 @@
+make -j6         O=../KERNEL_OBJ/         ARCH=arm64         CROSS_COMPILE=aarch64-linux-gnu-         CLANG_TRIPLE=aarch64-linux-gnu- CC=${CC}         modules_install INSTALL_MOD_PATH=. 2>&1 
+make[1]: Entering directory '/data/project/halium/ubport/arnoz/out/downloads/KERNEL_OBJ'
+arch/arm64/Makefile:27: ld does not support --fix-cortex-a53-843419; kernel may be susceptible to erratum
+arch/arm64/Makefile:48: Detected assembler with broken .inst; disassembly will be unreliable
+  INSTALL drivers/char/rdbg.ko
+  INSTALL drivers/media/platform/msm/dvb/adapter/mpq-adapter.ko
+  INSTALL drivers/media/platform/msm/dvb/demux/mpq-dmx-hw-plugin.ko
+  INSTALL drivers/soc/qcom/llcc_perfmon.ko
+  INSTALL drivers/video/backlight/lcd.ko
+  DEPMOD  4.19.157-perf+
