@@ -1,0 +1,34 @@
+/system/bin/logcat -b radio
+--------- beginning of radio
+03-12 10:47:32.258   518   518 D RILD    : **RIL Daemon Started**
+03-12 10:47:32.258   518   518 D RILD    : **RILd param count=1**
+03-12 10:47:32.298   518   518 D RILD    : RIL_Init argc = 3 clientId = 0
+03-12 10:47:32.301   518   518 D RILD    : deviceInfoServiceModule found and loaded
+03-12 10:47:32.301   518   518 E RILQ    : log to /data/vendor/radio/ril_log for QCRIL logging is not enabled
+03-12 10:47:32.917   518   518 W RILC    : RIL_onUnsolicitedResponse called before RIL_register
+03-12 10:47:32.959   518   518 D RILD    : RIL_Init rilInit completed
+03-12 10:47:32.959   518   518 I RILC    : SIM_COUNT: 1
+03-12 10:47:32.959   518   518 E RILC    : RIL_register: RIL version 15
+03-12 10:47:32.959   518   518 I RILC    : s_registerCalled flag set, 1
+03-12 10:47:32.960   518   922 D RIL_SAP : sap_register_service status=-2147483648
+03-12 10:47:32.977   518   518 I RILC    : RILHIDL called registerService
+03-12 10:47:32.977   518   518 D RILD    : RIL_Init RIL_register completed
+03-12 10:47:32.977   518   518 D RILD    : RIL_register_socket completed
+
+
+grep -ri wlan /vendor/etc/init
+/vendor/etc/init/hw/init.target.rc:#Load WLAN driver
+/vendor/etc/init/hw/init.target.rc:    insmod /vendor/lib/modules/qca_cld3_wlan.ko
+/vendor/etc/init/hw/init.qcom.rc:    setprop wifi.interface wlan0
+/vendor/etc/init/hw/init.qcom.rc:    chown system system /persist/WCNSS_qcom_wlan_nv.bin
+/vendor/etc/init/hw/init.qcom.rc:    -g@android:vendor_wpa_wlan0
+/vendor/etc/init/hw/init.qcom.rc:    socket vendor_wpa_wlan0 dgram 660 wifi wifi
+/vendor/etc/init/hw/init.qcom.rc:service dhcpcd_wlan0 /system/bin/dhcpcd -ABKLG
+/vendor/etc/init/hw/init.qcom.rc:service iprenew_wlan0 /system/bin/dhcpcd -n
+/vendor/etc/init/hw/init.qcom.rc:    insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
+/vendor/etc/init/hw/init.qcom.rc:    write /sys/kernel/shutdown_wlan/shutdown 1
+/vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc:service fstman_wlan0 /vendor/bin/fstman -B -ddd -c /data/vendor/wifi/fstman.ini \
+/vendor/etc/init/vendor.qti.hardware.fstman@1.0-service.rc:    -a 0 @android:vendor_wpa_wlan0
+/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:    -g@android:wpa_wlan0
+/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:    socket wpa_wlan0 dgram 660 wifi wifi
+/vendor/etc/init/init-qcril-data.rc:  setprop ro.telephony.iwlan_operation_mode "legacy"
