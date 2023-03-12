@@ -1,0 +1,46 @@
+[ 1054.244426] pm7250b_charger: smblib_run_aicl: re-running AICL
+[ 1054.244648] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.244703] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.244720] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.246851] pm7250b_charger: smblib_get_charge_param: float voltage = 4430000 (0x53)
+[ 1054.246874] pm7250b_charger: smblib_get_charge_param: fast charge current = 4600000 (0x5c)
+[ 1054.246894] pm7250b_charger: smblib_get_charge_param: aicl icl status = 500000 (0x0a)
+[ 1054.246917] pm7250b_charger: smblib_get_charge_param: dcdc icl max status = 900000 (0x12)
+[ 1054.246967] pm7250b_charger: smblib_get_charge_param: fast charge current = 4600000 (0x5c)
+[ 1054.246984] pm7250b_charger: smblib_get_charge_param: usb input current limit = 500000 (0x0a)
+[ 1054.247364] pm7250b_charger: smblib_get_charge_param: aicl icl status = 500000 (0x0a)
+[ 1054.247801] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.247965] QG-K: qg_psy_get_property: pmic aux adc battery temp val:245, and bettery fg temp bq27xxx_temperature=250
+[ 1054.247998] pm7250b_charger: smblib_get_charge_param: aicl icl status = 500000 (0x0a)
+[ 1054.249196] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.249591] bad ioctl: -1072934383
+[ 1054.249801] pm7250b_charger: smblib_get_charge_param: aicl icl status = 550000 (0x0b)
+[ 1054.250609] QG-K: qg_psy_get_property: pmic aux adc battery temp val:245, and bettery fg temp bq27xxx_temperature=250
+[ 1054.250842] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.250897] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.250916] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.251035] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.251180] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.251253] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.251499] pm7250b_charger: smblib_get_charge_param: aicl icl status = 550000 (0x0b)
+[ 1054.251636] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.251683] healthd: battery l=60 v=4000 t=22.5 h=2 st=2 c=181579 fc=7565000 cc=51 chg=u
+[ 1054.253852] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.253872] pm7250b_charger: smblib_get_charge_param: aicl icl status = 550000 (0x0b)
+[ 1054.253914] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.253926] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.253980] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.254163] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.254182] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.254212] pm7250b_charger: smblib_get_charge_param: aicl icl status = 550000 (0x0b)
+[ 1054.254242] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.254255] healthd: battery l=60 v=4000 t=22.5 h=2 st=2 c=181579 fc=7565000 cc=51 chg=u
+[ 1054.254386] bad ioctl: -1072934383
+[ 1054.255152] pm7250b_charger: smblib_get_charge_param: aicl icl status = 600000 (0x0c)
+[ 1054.255248] QG-K: qg_psy_get_property: pmic aux adc battery temp val:245, and bettery fg temp bq27xxx_temperature=250
+[ 1054.255446] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.255513] pm7250b_charger: smblib_get_prop_usb_online: POWER_PATH_STATUS = 0x95
+[ 1054.255529] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.255650] pm7250b_charger: smblib_get_prop_batt_health: BATTERY_CHARGER_STATUS_2 = 0x08
+[ 1054.255861] pm7250b_charger: smblib_get_prop_dc_online: POWER_PATH_STATUS = 0x95
+[ 1054.255912] pm7250b_charger: smblib_get_charge_param: aicl icl status = 600000 (0x0c)
